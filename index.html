@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CV, Currículum, Desarrollador, Alexander Soriano">
+    <meta name="description" content="Currículum vitae digital de Alexander Xavier Soriano Leon">
+    <meta name="author" content="Alexander Xavier Soriano Leon">
+    <title>Alexander Xavier Soriano Leon - CV</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Alexander Xavier Soriano Leon</h1>
+        <p class="subtitle">Estudiante de Computer Science, desarrollador web en formación</p>
+        <nav>
+            <ul>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="educacion">
+            <h2>Educación</h2>
+            <ul>
+                <li>ESPOL — Ingeniería en Ciencias de la Computación — 2021 - presente</li>
+            </ul>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Java - Intermedio</li>
+                <li>WordPress - Intermedio</li>
+                <li>Inglés - Intermedio</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos-grid">
+                <article>
+                    <h3>Proyecto 1: Modelado de aplicación de entregas</h3>
+                    <p>Descripción: Modelado básico de aplicación de entregas de un local.</p>
+                    <p>Tecnologías: Java, JavaFX</p>
+                    <p>Estado: ✅ Completado</p>
+                </article>
+                <article>
+                    <h3>Proyecto 2: ContactLi: Libreta de Contactos</h3>
+                    <p>Descripción: Aplicación de Escritorio para gestionar contactos.</p>
+                    <p>Tecnologías: Java, JavaFX</p>
+                    <p>Estado: ✅ Completado</p>
+                </article>
+                <article>
+                    <h3>Proyecto 3: Juego Tres en Raya</h3>
+                    <p>Descripción: Juego de Tres en Raya con interfaz gráfica.</p>
+                    <p>Tecnologías: Java, JavaFX</p>
+                    <p>Estado: ✅ Completado</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <div class="referencias-flex">
+                <article>
+                    <p>"Excelente estudiante, siempre comprometido con el aprendizaje."</p>
+                    <p><strong>Maestro de inglés</strong> — 4 meses</p>
+                </article>
+                <article>
+                    <p>"Colaborador destacado en proyectos de JavaFX, responsable y creativo."</p>
+                    <p><strong>Compañero de proyecto</strong></p>
+                </article>
+                <article>
+                    <p>"Lideró con éxito el desarrollo de un proyecto web en WordPress."</p>
+                    <p><strong>Project Manager</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <div class="multimedia-grid">
+                <figure>
+                    <img src="https://picsum.photos/300/200" alt="Foto de perfil" id="photo">
+                    <figcaption>Foto de perfil</figcaption>
+                </figure>
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="Video de presentación" frameborder="0" allowfullscreen></iframe>
+                    <figcaption>Video de presentación</figcaption>
+                </figure>
+                <figure>
+                    <iframe 
+                        src="https://www.google.com/maps?q=Guayaquil+Ecuador&output=embed" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <figcaption>Ubicación: Guayaquil, Ecuador</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <address>
+                Email: <a href="mailto:axsorian@espol.edu.ec">axsorian@espol.edu.ec</a><br>
+                GitHub: <a href="https://github.com/axsorian" target="_blank">https://github.com/axsorian</a><br>
+                Ubicación: Guayaquil, Ecuador
+            </address>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información de contacto</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo">
+
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto">
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+
+                    <label for="interes">Interés:</label>
+                    <select id="interes" name="interes">
+                        <option value="proyecto">Proyecto</option>
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Preferencias de contacto:</legend>
+                        <label><input type="radio" name="metodo" value="email" checked> Email</label>
+                        <label><input type="radio" name="metodo" value="telefono"> Teléfono</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Intereses adicionales:</legend>
+                        <label><input type="checkbox" name="intereses" value="desarrollo"> Desarrollo</label>
+                        <label><input type="checkbox" name="intereses" value="diseño"> Diseño</label>
+                        <label><input type="checkbox" name="intereses" value="marketing"> Marketing</label>
+                    </fieldset>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Alexander Xavier Soriano Leon</p>
+    </footer>
+</body>
+</html>
