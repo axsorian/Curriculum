@@ -83,12 +83,21 @@ article {
 /* Multimedia Grid */
 .multimedia-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* columnas más pequeñas */
     gap: 1rem;
 }
 
-#photo {
-    width: 8vw;
+.multimedia-grid figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.multimedia-grid img,
+.multimedia-grid iframe {
+    width: 100%;       /* se adapta al contenedor */
+    max-width: 300px;  /* tamaño máximo */
     height: auto;
     border-radius: 5px;
 }
